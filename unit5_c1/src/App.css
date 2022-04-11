@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.addRun{
+  color: white;
+  background-color: rgb(19, 98, 159);
+  padding: 10px 30px 10px 30px;
+  margin: 10px;
+  border: none;
+}
