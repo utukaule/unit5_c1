@@ -5,12 +5,13 @@ function App() {
   const [runes, runCounter] = React.useState(0);
   const addRuns = (value)=>{
     runCounter(runes + value);
+    if(runes === 100){
+    }
   }
 
   const [wicket, wCounter] = React.useState(0);
   const addWickets = (w) => {
     wCounter(wicket + w );
-    // console.log()
   }
 
   // const [counter,oCounter] = React.useState(0);
@@ -41,7 +42,7 @@ function App() {
 
       {/* <h4>Overs {}.{}</h4>
       <button className='addRun' onClick={()=>incrementBall(1)}>add 1</button> */}
-
+      <h1>{runes > 100 ? "India win " : ""} the match</h1>
     </div>
   );
 }
